@@ -16,6 +16,10 @@
         let assert = chai.assert;
         let expect = chai.expect;
     </script>
+
+    <!-- Code coverage library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/blanket.js/1.1.4/blanket.min.js"
+        data-cover-adapter="js/lib/mocha-blanket.js" data-cover-flags="branchTracking"></script>
 </head>
 
 <body>
@@ -34,6 +38,9 @@
     <script>
         mocha.run();
     </script>
+
+    <!-- run code coverage -->
+    <script src="pow.js" data-cover></script>
 </body>
 
 </html>
